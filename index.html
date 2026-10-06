@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vedic Cloud - Premium Hosting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Clean Retro Gaming Style Inspired by Your Logo -->
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Courier New', Courier, monospace, Arial, sans-serif; 
+            background-color: #0d0d11; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px 10px; }
+        
+        /* Navigation Menu Bar */
+        nav {
+            background-color: #15151c;
+            border: 3px solid #2d2d3a;
+            border-radius: 4px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            box-shadow: 0px 4px 0px #000000;
+        }
+        .nav-logo { color: #FFCC00; font-weight: bold; font-size: 1.4rem; text-transform: uppercase; text-decoration: none; letter-spacing: 1px; }
+        .nav-links a { color: #ffffff; text-decoration: none; margin-left: 20px; font-size: 0.95rem; font-weight: bold; text-transform: uppercase; }
+        .nav-links a:hover { color: #FFCC00; }
+        
+        /* Headers */
+        h1.brand { color: #FFCC00; font-size: 3rem; margin-top: 20px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 3px 3px 0px #FF3300; }
+        p.subtitle { color: #aaaaaa; font-size: 1.1rem; margin-bottom: 60px; font-weight: bold; }
+        
+        /* Section Dividers */
+        .section-title { 
+            font-size: 1.8rem; 
+            color: #ffffff; 
+            margin: 60px 0 30px 0; 
+            text-align: left; 
+            border-left: 6px solid #FF3300; 
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Grid Layout */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 20px;
+        }
+        
+        /* Plan Card Design */
+        .card { 
+            background-color: #15151c; 
+            border: 3px solid #2d2d3a; 
+            border-radius: 4px; 
+            padding: 25px 20px; 
+            transition: all 0.2s ease-in-out;
+            text-align: center;
+            box-shadow: 0px 5px 0px #000000;
+        }
+        .card:hover { border-color: #FFCC00; transform: translateY(-3px); box-shadow: 0px 8px 0px #000000; }
+        .card h2 { font-size: 1.6rem; margin-bottom: 12px; color: #ffffff; text-transform: uppercase; }
+        .price { font-size: 2.2rem; color: #FFCC00; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 0px #111; }
+        .price span { font-size: 0.9rem; color: #aaaaaa; }
+        
+        /* Coming Soon Banner Card */
+        .coming-soon-card {
+            background-color: #15151c;
+            border: 3px dashed #FF3300;
+            border-radius: 4px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffaa66;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 0px #000000;
+        }
+        
+        /* Features List */
+        ul { list-style: none; margin-bottom: 25px; text-align: left; padding-left: 10px; }
+        li { margin-bottom: 10px; color: #dddddd; font-size: 0.95rem; }
+        li::before { content: "▶ "; color: #FFCC00; font-weight: bold; margin-right: 6px; }
+        
+        /* Buttons */
+        .btn { 
+            display: inline-block; 
+            background-color: #FFCC00; 
+            color: #0d0d11; 
+            text-decoration: none; 
+            padding: 12px 20px; 
+            font-weight: bold; 
+            border: 2px solid #ffffff;
+            border-radius: 4px; 
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0px 3px 0px #997700;
+        }
+        .btn:hover { background-color: #ffe066; cursor: pointer; transform: translateY(1px); box-shadow: 0px 2px 0px #997700; }
+        .btn-discord { background-color: transparent; color: #FFCC00; border: 3px solid #FFCC00; width: auto; margin-top: 20px; box-shadow: 0px 3px 0px #000000; }
+        .btn-discord:hover { background-color: #FFCC00; color: #0d0d11; box-shadow: 0px 2px 0px #000000; }
+        
+        /* Footer */
+        footer { margin-top: 80px; color: #555566; font-size: 0.9rem; border-top: 2px solid #2d2d3a; padding-top: 20px; font-weight: bold; }
+        
+        /* Mobile Navigation adjustment */
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Minimal Navigation -->
+        <nav>
+            <a href="#" class="nav-logo">☁ Vedic Cloud</a>
+            <div class="nav-links">
+                <a href="#minecraft">Minecraft</a>
+                <a href="#vps">VPS</a>
+                <a href="#bots">Bot Hosting</a>
+                <a href="#web">Web Hosting</a>
+            </div>
+        </nav>
+
+        <!-- Main Introduction -->
+        <h1 class="brand">Vedic Cloud</h1>
+        <p class="subtitle">High-Performance Flame-Speed Server Deployments</p>
+
+        <!-- MINECRAFT HOSTING SECTION -->
+        <div id="minecraft" class="section-title">Minecraft Hosting</div>
+        <div class="grid">
+            <!-- Dirt Plan Card -->
+            <div class="card">
+                <h2>Dirt Plan</h2>
+                <div class="price">₹99 <span>/ Mo</span></div>
+                <ul>
+                    <li>1 vCore AMD EPYC™ CPU</li>
+                    <li>2 GB DDR4 RAM</li>
+                    <li>25 GB NVMe Storage</li>
+                    <li>1 MySQL Database</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Grass Plan Card -->
+            <div class="card">
+                <h2>Grass Plan</h2>
+                <div class="price">₹229 <span>/ Mo</span></div>
+                <ul>
+                    <li>1.5 vCore AMD EPYC™ CPU</li>
+                    <li>4 GB DDR4 RAM</li>
+                    <li>40 GB NVMe Storage</li>
+                    <li>2 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Stone Plan Card -->
+            <div class="card">
+                <h2>Stone Plan</h2>
+                <div class="price">₹349 <span>/ Mo</span></div>
+                <ul>
+                    <li>2 vCore AMD EPYC™ CPU</li>
+                    <li>6 GB DDR4 RAM</li>
+                    <li>60 GB NVMe Storage</li>
+                    <li>2 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Iron Plan Card -->
+            <div class="card">
+                <h2>Iron Plan</h2>
+                <div class="price">₹459 <span>/ Mo</span></div>
+                <ul>
+                    <li>3 vCore AMD EPYC™ CPU</li>
+                    <li>8 GB DDR4 RAM</li>
+                    <li>80 GB NVMe Storage</li>
+                    <li>3 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Diamond Plan Card -->
+            <div class="card">
+                <h2>Diamond Plan</h2>
+                <div class="price">₹679 <span>/ Mo</span></div>
+                <ul>
+                    <li>4 vCore AMD EPYC™ CPU</li>
+                    <li>12 GB DDR4 RAM</li>
+                    <li>120 GB NVMe Storage</li>
+                    <li>3 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Netherite Plan Card -->
+            <div class="card">
+                <h2>Netherite Plan</h2>
+                <div class="price">₹899 <span>/ Mo</span></div>
+                <ul>
+                    <li>5 vCore AMD EPYC™ CPU</li>
+                    <li>16 GB DDR4 RAM</li>
+                    <li>160 GB NVMe Storage</li>
+                    <li>4 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
+                <a href="https://discord.gg" target="_blank" class="btn">Order Now</a>
+            </div>
+
+            <!-- Elytra Plan Card -->
+            <div class="card">
+                <h2>Elytra Plan</h2>
+                <div class="price">₹1,599 <span>/ Mo</span></div>
+                <ul>
+                    <li>8 vCore AMD EPYC™ CPU</li>
+                    <li>32 GB DDR4 RAM</li>
+                    <li>300 GB NVMe Storage</li>
+                    <li>5 MySQL Databases</li>
+                    <li>99.9% Uptime Guaranteed</li>
+                    <li>Instant Setup</li>
+                </ul>
